@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="test"><img src="" alt="" id="image" height="200" width="200"></div> 
+   <input type="button" value="click it" id="button">
+</body>
+<script>
+   let butt =document.getElementById('button')
+    butt.style.backgroundColor = "orange"
+butt.style.width = "120px";
+butt.style.height = "40px"
+butt.style.color = "white"
+butt.style.fontSize= "20px"
+butt.style.textTransform = "capitalize"
+   
+
+    let btn =document.getElementById('button').addEventListener("click", function(){
+
+        let test = document.getElementById("test");
+   
+   let arra = [
+    "E:\github\lodo-disc\index.html",
+   "disc-1.jpeg",
+   "disc-2.jpeg",
+   "disc-3.jpeg",
+   "disc-4.jpeg",
+   "disc-5.jpeg",
+   "disc-5.jpeg",
+   "disc-5.jpeg",];
+   let randomindex = Math.floor(Math.random ());
+
+   test.src = arra[randomindex];
+    })
+</script>
+</html>
